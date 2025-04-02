@@ -1,0 +1,99 @@
+.header {
+  background-color: #141414;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo-and-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.menu li:hover {
+  color: #e50914;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  color: white; /* Icon color */
+  cursor: pointer; /* Change cursor on hover */
+  transition: color 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.icon:hover {
+  color: #e50914; /* Change color on hover */
+}
+
+.icon-list {
+  display: flex; /* Ensure icons are displayed in a row */
+  align-items: center; /* Center icons vertically */
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.icon-list li {
+  margin-left: 20px; /* Space between icons */
+  cursor: pointer; /* Change cursor on hover */
+  transition: color 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.icon-list li:hover .icon {
+  color: #e50914; /* Change color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 10px; /* Adjust padding for mobile */
+  }
+
+  .menu {
+    flex-direction: column; /* Stack menu items vertically */
+    gap: 10px; /* Space between menu items */
+    margin-top: 10px; /* Space above the menu */
+  }
+
+  .icons {
+    margin-top: 10px; /* Space above icons in mobile view */
+    gap: 10px; /* Adjust icon spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    gap: 5px; /* Reduce gap for smaller screens */
+  }
+
+  .icon-list {
+    gap: 10px; /* Adjust icon spacing */
+  }
+}
