@@ -1,18 +1,13 @@
-import "./App.css";
-import "./index.css";
-import Footer from "./components/footer/Footer";
+import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/header/Header";
-import Banner from "./components/banner/Banner";
-import { BrowseRouter, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <Footer />
-      <Banner />
-    </>
+      <Home />
+    </Router>
   );
 }
-
 export default App;
