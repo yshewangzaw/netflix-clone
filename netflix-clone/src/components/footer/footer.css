@@ -1,65 +1,64 @@
 .footer-outer-container {
-  background-color: #141414; /* Dark background */
-  color: white; /* White text color */
-  padding: 20px 10%; /* Padding for spacing */
+  background-color: #141414;
+  color: white;
+  padding: 20px 10%;
 }
 
 .footer-inner-container {
-  display: flex; /* Flexbox for layout */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-icons {
-  display: flex; /* Flexbox for icons */
-  gap: 15px; /* Space between icons */
-  margin-bottom: 20px; /* Margin below icons */
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
 .footer-data {
-  display: flex; /* Flexbox for lists */
-  justify-content: space-around; /* Space between columns */
-  width: 100%; /* Full width */
-  margin-bottom: 20px; /* Margin below data section */
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .footer-data div {
-  flex: 1; /* Equal space for each column */
+  flex: 1;
 }
 
 .footer-data ul {
-  list-style: none; /* Remove default list styles */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margin */
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-data li {
-  margin-bottom: 10px; /* Space between items */
-  cursor: pointer; /* Pointer cursor on hover */
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .footer-data li:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
 .service-code {
-  margin-bottom: 10px; /* Margin below service code */
+  margin-bottom: 10px;
 }
 
 .copy-write {
-  text-align: center; /* Center copyright text */
-  font-size: 0.9rem; /* Smaller font size for copyright */
+  text-align: center;
+  font-size: 0.9rem;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .footer-data {
-    flex-direction: column; /* Stack columns on smaller screens */
-    align-items: center; /* Center items */
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-data div {
-    margin-bottom: 15px; /* Space between stacked sections */
-    text-align: center; /* Center text for smaller screens */
+    margin-bottom: 15px;
+    text-align: center;
   }
 }
