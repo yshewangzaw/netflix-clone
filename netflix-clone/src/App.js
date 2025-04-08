@@ -1,12 +1,17 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/header/Header";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
+import Footer from "./components/footer/Footer";
+import Banner from "./components/banner/Banner";
+import RowList from "./components/Rows/RowsList/RowList";
 
 function App() {
   return (
     <Router>
       <Header />
-      <Home />
+      <Banner />
+      <RowList />
+      <Footer />
     </Router>
   );
 }

@@ -1,49 +1,65 @@
-ul {
-  list-style: none;
+.footer-outer-container {
+  background-color: #141414; /* Dark background */
+  color: white; /* White text color */
+  padding: 20px 10%; /* Padding for spacing */
 }
 
-p {
-  margin: 0.5rem 0;
+.footer-inner-container {
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
 }
 
-.footer {
-  max-width: 70%;
-  margin: 1rem auto;
-  overflow: auto;
+.footer-icons {
+  display: flex; /* Flexbox for icons */
+  gap: 15px; /* Space between icons */
+  margin-bottom: 20px; /* Margin below icons */
 }
 
-.footer,
-.footer a {
-  color: #999;
-  font-size: 0.9rem;
+.footer-data {
+  display: flex; /* Flexbox for lists */
+  justify-content: space-around; /* Space between columns */
+  width: 100%; /* Full width */
+  margin-bottom: 20px; /* Margin below data section */
 }
 
-.footer p {
-  margin-bottom: 1.5rem;
+.footer-data div {
+  flex: 1; /* Equal space for each column */
 }
 
-.footer .footer-cols {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
+.footer-data ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
 }
 
-.footer li {
-  line-height: 1.9;
+.footer-data li {
+  margin-bottom: 10px; /* Space between items */
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
-.footer .lang-select {
-  margin-top: 2rem;
-  color: #999;
-  background-color: #000;
-  background-image: none;
-  border: 1px solid #333;
-  padding: 1rem 1.2rem;
-  border-radius: 5px;
+.footer-data li:hover {
+  text-decoration: underline; /* Underline on hover */
 }
 
-@media (max-width: 960px) {
-  .footer .footer-cols {
-    grid-template-columns: repeat(2, 1fr);
+.service-code {
+  margin-bottom: 10px; /* Margin below service code */
+}
+
+.copy-write {
+  text-align: center; /* Center copyright text */
+  font-size: 0.9rem; /* Smaller font size for copyright */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-data {
+    flex-direction: column; /* Stack columns on smaller screens */
+    align-items: center; /* Center items */
+  }
+
+  .footer-data div {
+    margin-bottom: 15px; /* Space between stacked sections */
+    text-align: center; /* Center text for smaller screens */
   }
 }

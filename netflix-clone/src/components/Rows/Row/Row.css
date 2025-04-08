@@ -1,0 +1,39 @@
+/* Row.css */
+
+.row {
+  margin-left: 20px;
+  color: white;
+}
+
+.row h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.row_posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px 0;
+}
+
+.row_posters::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for a cleaner look */
+}
+
+.row_poster {
+  width: 120px; /* Set a fixed width */
+  height: 200px; /* Set a fixed height for vertical size */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-right: 10px; /* Spacing between images */
+  transition: transform 0.2s ease; /* Smooth scaling on hover */
+}
+
+.row_poster:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.row_posterLarge {
+  width: 250px; /* Larger width for large row */
+  height: 300px; /* Increased height for large posters */
+}
